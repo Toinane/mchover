@@ -1,0 +1,55 @@
+body{
+   margin: 0;
+   font-family: sans-serif;
+}
+header{
+   width: 100%;
+   /*height: 500px;*/
+   background: url('background-top.png') fixed no-repeat;
+   background-size: cover;
+   padding: 150px 0;
+}
+   .main-title{
+      text-align: center;
+   }
+   header [mchover-data] .mctitle, header [mchover-data]:hover .mctitle{
+      display: inline-block;
+      position: static;
+   }
+
+nav{
+   text-align: center;
+   border-bottom: 5px solid #55f;
+}
+   nav li{
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 1.2em;
+   }
+      nav li a{
+         font-family: Minecraftia, sans-serif;
+         text-decoration: none;
+         color: #888;
+         text-shadow: 2px 2px 0 #ccc;
+      }
+      nav li a:hover{
+         color: #aaa;
+         text-shadow: 2px 2px 0 #fff;
+      }
+
+.main{
+   height: 1000px;
+}
+
+   .examples{
+      background: url('background-item.png') fixed;
+      background-size: cover;
+      background-position: 0 -100px;
+      background-size: cover;
+      padding: 50px 0;
+      text-align: center;
+   }
+      .example-item{
+         display: inline-block;
+         margin: 0 20px;
+      }

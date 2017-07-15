@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>MinecraftHover</title>
+      <link href="css/minecrafthover.css" rel="stylesheet" />
+      <link href="css/index.css" rel="stylesheet" />
+   </head>
+   <body>
+      <header>
+         <div class="main-title" mchover-data="title"></div>
+      </header>
+      <nav>
+         <li><a href="#howto">How to use</a></li>
+         <li><a href="#examples">Examples</a></li>
+         <li><a href="#download">Download</a></li>
+      </nav>
+      <section class="main">
+         <section class="howto" id="howto">
+            
+         </section>
+         <section class="examples" id="examples">
+            <div class="example-item" mchover-data="example1"><img src="css/items/chestplate.png" alt="chestplate" /></div>
+            <div class="example-item" mchover-data="example2"><img src="css/items/pickaxe.png" alt="pickaxe" /></div>
+            <div class="example-item" mchover-data="example3" mchover-glint="book"><img src="css/items/book.png" alt="book" /></div>
+         </section>
+      </section>
+      <footer>
+
+      </footer>
+      <script src="js/minecrafthover.js"></script>
+      <script>
+         let mchover = new MinecraftHover();
+         mchover.add('title', {
+            title: '&6>>> &l&c&k: : : :&r &l&9MinecraftHover &c&k: : : :&r &6<<<',
+            lore: '&oA JS plugin to create simple\n&ohover description like Minecraft!\n\n&2Enjoy Minecraft &lcolors&r&2 & &nsyntax',
+            id: 'author:toinane'
+         });
+         mchover.add('example1', {
+            title: 'Chain Chestplate (#0303)',
+            lore: '\nWhen on body:\n &9+5 Armor',
+            id: 'minecraft:chainmail_chestplate'
+         });
+         mchover.add('example2', {
+            title: '&o&4Epic &9Pickaxe&r&f of &c&lFire ! &r&f(#0278)',
+            lore: '&5&n&oFire your ennemie with divine power!\n\nWhen in main hand:\n &91,2 Attack Speed\n &95 Attack Damage',
+            id: 'minecraft:diamond_pickaxe'
+         });
+         mchover.add('example3', {
+            title: '&eEnchanted Book &f(#0403)',
+            lore: '&5&oWoooh! Cool glint effect!\nThorns III',
+            id: 'minecraft:enchanted_book\nNBT: 1 Tag(s)'
+         });
+      </script>
+   </body>
+</html>
